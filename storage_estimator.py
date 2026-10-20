@@ -1,15 +1,9 @@
-# Temperature Converter
-# A small program for practising Git and GitHub.
-# It converts a temperature from Celsius to Fahrenheit.
-#
-# How to run it:  python temperature_converter.py
+# Storage Estimator
+# Converts storage values to bytes and gigabytes
 
-# Ask the user for a temperature in Celsius
-celsius = float(input("Temperature in Celsius: "))
+mb = float(input("Enter storage in Megabytes (MB): "))
+bytes_val = mb * 1024 * 1024
+gb_val = mb / 1024
 
-# Convert to Fahrenheit
-fahrenheit = celsius * 9 / 5 + 32
-
-# Show the result
-print("Fahrenheit:", fahrenheit)
-print("New line added")
+print(f"Storage in Bytes: {bytes_val:,.0f} Bytes")
+print(f"Storage in Gigabytes: {gb_val:.2f} GB")
